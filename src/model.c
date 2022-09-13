@@ -21,7 +21,7 @@ SEXP hello_world() {
 
 SEXP easy_pi() {
   int64_t hits = 0;
-  int64_t throws = 10000000L;
+  int64_t throws = 100000000L;
 
   srand(_mpirc_get_comm_rank());
   int nodes = _mpirc_get_comm_size();
