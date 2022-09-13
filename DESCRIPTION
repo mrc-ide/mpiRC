@@ -1,0 +1,10 @@
+Package: mpiRC
+Type: Package
+Title: Mpi Tests using R/C-api
+Version: 0.1.0
+Author: Wes Hinsley
+Maintainer: Wes Hinsley <w.hinsley@imperial.ac.uk>
+Description: Mpi Tests using R/C-api
+License: MIT
+Encoding: UTF-8
+RoxygenNote: 7.1.1
