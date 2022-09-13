@@ -7,9 +7,11 @@
 static const R_CallMethodDef call_methods[] = {
   {"c_mpirc_mpi_init",      (DL_FUNC) &mpirc_mpi_init,       0},
   {"c_mpirc_mpi_finalize",  (DL_FUNC) &mpirc_mpi_finalize,   0},
-  {"c_mpirc_test_code",     (DL_FUNC) &mpirc_test_code,      0},
   {"c_mpirc_get_comm_size", (DL_FUNC) &mpirc_get_comm_size,  0},
   {"c_mpirc_get_comm_rank", (DL_FUNC) &mpirc_get_comm_rank,  0},
+
+  {"c_hello_world",         (DL_FUNC) &hello_world,          0},
+  {"c_easy_pi",             (DL_FUNC) &easy_pi,              0},
   {NULL,                   NULL,                             0}
 };
 
