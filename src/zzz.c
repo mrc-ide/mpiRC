@@ -1,5 +1,5 @@
-#include "../inst/include/mpiRC.h"
-#include "../inst/include/model.h"
+#include "mpiRC.h"
+#include "model.h"
 
 #include <R_ext/Rdynload.h>
 #include <Rversion.h>

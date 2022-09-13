@@ -14,9 +14,10 @@ mpirc_test_code <- function() {
 }
 
 ##' @export
-##' @title Test MPI code
+##' @title Hello world, reporting rank and size
 hello <- function() {
   mpirc_mpi_init()
   mpirc_test_code()
   mpirc_mpi_finalize()
+  invisible()
 }

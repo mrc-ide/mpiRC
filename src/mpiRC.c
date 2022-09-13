@@ -1,4 +1,4 @@
-#include "../inst/include/mpiRC.h"
+#include "mpiRC.h"
 
 SEXP mpirc_mpi_init() {
   MPI_Init(NULL, NULL);
@@ -35,3 +35,5 @@ SEXP mpirc_get_comm_rank() {
   UNPROTECT(1);
   return result;
 }
+
+

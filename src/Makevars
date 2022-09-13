@@ -1,2 +1,2 @@
-PKG_CFLAGS = -I ../inst/include -lmsmpi
+PKG_CFLAGS = -lmsmpi
 PKG_LIBS = -lmsmpi
