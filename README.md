@@ -101,3 +101,8 @@ Rank 0: result = 3.141519596377
 
 We're not that close to pi here, and the change is a bit erratic - I think 
 this is because I am using the terrible srand/rand RNG in stdlib.
+
+## Standalone C version
+
+See `scripts/standalone` for simple code, compile and run scripts for
+a Hello World MPI in C example.
