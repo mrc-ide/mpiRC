@@ -10,5 +10,6 @@
 
 SEXP hello_world();
 SEXP easy_pi();
+SEXP iter_pi();
 
 #endif

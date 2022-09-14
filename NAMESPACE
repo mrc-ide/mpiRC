@@ -2,4 +2,5 @@
 
 export(do_easy_pi)
 export(do_hello_world)
+export(do_iter_pi)
 useDynLib(mpiRC, .registration = TRUE)

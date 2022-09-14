@@ -1,0 +1,1 @@
+job submit /numnodes:4 /singlenode:false /scheduler:wpia-hpc-hn /jobtemplate:AllNodes /workdir:\\qdrive.dide.ic.ac.uk\homes\wrh1\mpitest /stdout:out_iter_pi.txt /stderr:err_iter_pi.txt mpiexec -n 4 iter-pi-cluster.bat

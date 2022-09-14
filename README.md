@@ -65,8 +65,8 @@ Hello world, I am WPIA-HPC-006.dide.local (1/4)
 Hello world, I am WPIA-HPC-007.dide.local (2/4)
 Hello world, I am WPIA-HPC-008.dide.local (3/4)
 ```
-noting the different notes. And the pi test reports similar in the output, but
-the text from R goes to stderr. 
+noting the different notes. And the easy pi test reports similar in the output, 
+but the text from R goes to stderr. 
 
 ```
 Q:\mpitest>type out_pi.txt
@@ -78,3 +78,26 @@ Hello world, I am WPIA-HPC-008.dide.local (3/4)
 Q:\mpitest>type err_pi.txt
 Rank 0: result = 3.141536870
 ```
+
+Then an iterative example, where we try to calculate pi, until the difference
+between two timesteps is less than a target value:
+
+```
+Q:\mpitest>tail out_iter_pi.txt
+Pi so far: 3.14151902265625 - Delta = 0.00000047304995
+Pi so far: 3.14152113875969 - Delta = 0.00000211610344
+Pi so far: 3.14151854461538 - Delta = 0.00000259414431
+Pi so far: 3.14152137175573 - Delta = 0.00000282714034
+Pi so far: 3.14152093787879 - Delta = 0.00000043387694
+Pi so far: 3.14152063007519 - Delta = 0.00000030780360
+Pi so far: 3.14151784104478 - Delta = 0.00000278903041
+Pi so far: 3.14152005259259 - Delta = 0.00000221154782
+Pi so far: 3.14151971764706 - Delta = 0.00000033494553
+Pi so far: 3.14151960072993 - Delta = 0.00000011691713
+
+Q:\mpitest>tail err_iter_pi.txt
+Rank 0: result = 3.141519596377
+```
+
+We're not that close to pi here, and the change is a bit erratic - I think 
+this is because I am using the terrible srand/rand RNG in stdlib.

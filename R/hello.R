@@ -1,11 +1,12 @@
 ##' @useDynLib mpiRC, .registration = TRUE
 NULL
 
-mpirc_mpi_rank     <- function() { .Call(c_mpirc_get_comm_rank) }
-mpirc_mpi_init     <- function() { .Call(c_mpirc_mpi_init)      }
-mpirc_mpi_finalize <- function() { .Call(c_mpirc_mpi_finalize)  }
-hello_world        <- function() { .Call(c_hello_world)         }
-easy_pi            <- function() { .Call(c_easy_pi)             }
+mpirc_mpi_rank     <- function()  { .Call(c_mpirc_get_comm_rank) }
+mpirc_mpi_init     <- function()  { .Call(c_mpirc_mpi_init)      }
+mpirc_mpi_finalize <- function()  { .Call(c_mpirc_mpi_finalize)  }
+hello_world        <- function()  { .Call(c_hello_world)         }
+easy_pi            <- function()  { .Call(c_easy_pi)             }
+iter_pi            <- function()  { .Call(c_iter_pi)             }
 
 ##' @export
 ##' @title Hello world, reporting rank and size
@@ -25,7 +26,21 @@ do_easy_pi <- function() {
   pi <- easy_pi()
   rank <- mpirc_mpi_rank()
   if (rank == 0) {
-    message(sprintf("Rank 0: result = %.9f\n", pi))
+    message(sprintf("Rank 0: result = %.12f\n", pi))
+  }
+  mpirc_mpi_finalize()
+  invisible()
+}
+
+##' @export
+##' @title Compute PI by MPI, until a target accuracy is reached
+do_iter_pi <- function() {
+  mpirc_mpi_init()
+  hello_world()
+  pi <- iter_pi()
+  rank <- mpirc_mpi_rank()
+  if (rank == 0) {
+    message(sprintf("Rank 0: result = %.12f\n", pi))
   }
   mpirc_mpi_finalize()
   invisible()

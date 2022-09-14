@@ -12,6 +12,8 @@ static const R_CallMethodDef call_methods[] = {
 
   {"c_hello_world",         (DL_FUNC) &hello_world,          0},
   {"c_easy_pi",             (DL_FUNC) &easy_pi,              0},
+  {"c_iter_pi",             (DL_FUNC) &iter_pi,              0},
+
   {NULL,                   NULL,                             0}
 };
 
