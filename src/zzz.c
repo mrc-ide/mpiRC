@@ -1,28 +1,25 @@
 #include "mpiRC.h"
-#include "model.h"
 
 #include <R_ext/Rdynload.h>
 #include <Rversion.h>
 
 static const R_CallMethodDef call_methods[] = {
-  {"c_mpirc_mpi_init",      (DL_FUNC) &mpirc_mpi_init,       0},
-  {"c_mpirc_mpi_finalize",  (DL_FUNC) &mpirc_mpi_finalize,   0},
-  {"c_mpirc_get_comm_size", (DL_FUNC) &mpirc_get_comm_size,  0},
-  {"c_mpirc_get_comm_rank", (DL_FUNC) &mpirc_get_comm_rank,  0},
-
-  {"c_hello_world",         (DL_FUNC) &hello_world,          0},
-  {"c_easy_pi",             (DL_FUNC) &easy_pi,              0},
-  {"c_iter_pi",             (DL_FUNC) &iter_pi,              0},
-
-  {NULL,                   NULL,                             0}
+ {"c_mpirc_MPI_Init",               (DL_FUNC) &mpirc_MPI_Init,               0},
+ {"c_mpirc_MPI_Initialized",        (DL_FUNC) &mpirc_MPI_Initialized,        0},
+ {"c_mpirc_MPI_Finalize",           (DL_FUNC) &mpirc_MPI_Finalize,           0},
+ {"c_mpirc_MPI_Finalized",          (DL_FUNC) &mpirc_MPI_Finalized,          0},
+ {"c_mpirc_MPI_Comm_size",          (DL_FUNC) &mpirc_MPI_Comm_size,          0},
+ {"c_mpirc_MPI_Comm_rank",          (DL_FUNC) &mpirc_MPI_Comm_rank,          0},
+ {"c_mpirc_MPI_Get_processor_name", (DL_FUNC) &mpirc_MPI_Get_processor_name, 0},
+ {NULL,                             NULL,                                    0}
 };
 
 void R_init_mpiRC(DllInfo *info) {
 
   // Register C routines to be called from C
 
-  //R_RegisterCCallable("mpiRC", "_mpirc_get_comm_size", (DL_FUNC) &_mpirc_get_comm_size);
-  //R_RegisterCCallable("mpiRC", "_mpirc_get_comm_rank", (DL_FUNC) &_mpirc_get_comm_rank);
+  //R_RegisterCCallable("mpiRC", "_mpirc_MPI_Comm_size", (DL_FUNC) &_mpirc_MPI_Comm_size);
+  //R_RegisterCCallable("mpiRC", "_mpirc_MPI_comm_rank", (DL_FUNC) &_mpirc_MPI_Comm_rank);
 
   // Register C routines to be called from R
 

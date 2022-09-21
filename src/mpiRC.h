@@ -6,13 +6,13 @@
 #include <Rinternals.h>
 #include <Rdefines.h>
 
-int _mpirc_get_comm_rank();
-int _mpirc_get_comm_size();
-
-SEXP mpirc_mpi_init();
-SEXP mpirc_mpi_finalize();
-SEXP mpirc_get_comm_size();
-SEXP mpirc_get_comm_rank();
+SEXP mpirc_MPI_Comm_size();
+SEXP mpirc_MPI_Comm_rank();
+SEXP mpirc_MPI_Init();
+SEXP mpirc_MPI_Initialized();
+SEXP mpirc_MPI_Finalize();
+SEXP mpirc_MPI_Finalized();
+SEXP mpirc_MPI_Get_processor_name();
 
 #endif
 
