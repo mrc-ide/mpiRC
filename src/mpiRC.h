@@ -13,6 +13,7 @@ SEXP mpirc_MPI_Initialized();
 SEXP mpirc_MPI_Finalize();
 SEXP mpirc_MPI_Finalized();
 SEXP mpirc_MPI_Get_processor_name();
+SEXP mpirc_MPI_Gather(SEXP send_vec, SEXP vec_type, SEXP root);
 
 #endif
 

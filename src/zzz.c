@@ -11,15 +11,11 @@ static const R_CallMethodDef call_methods[] = {
  {"c_mpirc_MPI_Comm_size",          (DL_FUNC) &mpirc_MPI_Comm_size,          0},
  {"c_mpirc_MPI_Comm_rank",          (DL_FUNC) &mpirc_MPI_Comm_rank,          0},
  {"c_mpirc_MPI_Get_processor_name", (DL_FUNC) &mpirc_MPI_Get_processor_name, 0},
+ {"c_mpirc_MPI_Gather",             (DL_FUNC) &mpirc_MPI_Gather,             3},
  {NULL,                             NULL,                                    0}
 };
 
 void R_init_mpiRC(DllInfo *info) {
-
-  // Register C routines to be called from C
-
-  //R_RegisterCCallable("mpiRC", "_mpirc_MPI_Comm_size", (DL_FUNC) &_mpirc_MPI_Comm_size);
-  //R_RegisterCCallable("mpiRC", "_mpirc_MPI_comm_rank", (DL_FUNC) &_mpirc_MPI_Comm_rank);
 
   // Register C routines to be called from R
 
