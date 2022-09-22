@@ -1,6 +1,6 @@
 #include "mpiRC.h"
 
-SEXP mpirc_MPI_Initialized() {
+SEXP r_mpirc_MPI_Initialized() {
   int res;
   MPI_Initialized(&res);
   SEXP result = PROTECT(result = NEW_INTEGER(1));

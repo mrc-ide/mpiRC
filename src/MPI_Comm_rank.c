@@ -1,6 +1,6 @@
 #include "mpiRC.h"
 
-SEXP mpirc_MPI_Comm_rank() {
+SEXP r_mpirc_MPI_Comm_rank() {
   int rank;
   MPI_Comm_rank(MPI_COMM_WORLD, &rank);
   SEXP result = PROTECT(result = NEW_INTEGER(1));
