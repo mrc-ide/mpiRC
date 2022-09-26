@@ -1,7 +1,7 @@
 Package: mpiRC
 Type: Package
 Title: Mpi Tests using R/C-api
-Version: 0.1.1
+Version: 0.1
 Author: Wes Hinsley
 Maintainer: Wes Hinsley <w.hinsley@imperial.ac.uk>
 Description: Mpi Tests using R/C-api
