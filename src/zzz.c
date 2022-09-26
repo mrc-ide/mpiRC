@@ -4,6 +4,7 @@
 #include <Rversion.h>
 
 static const R_CallMethodDef call_methods[] = {
+ {"c_mpirc_MPI_Allgather",          (DL_FUNC) &r_mpirc_MPI_Allgather,          1},
  {"c_mpirc_MPI_Init",               (DL_FUNC) &r_mpirc_MPI_Init,               0},
  {"c_mpirc_MPI_Initialized",        (DL_FUNC) &r_mpirc_MPI_Initialized,        0},
  {"c_mpirc_MPI_Finalize",           (DL_FUNC) &r_mpirc_MPI_Finalize,           0},
