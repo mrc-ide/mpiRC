@@ -15,6 +15,7 @@ typedef struct mpirc_data_wrapper {
 
 mpirc_data_wrapper* get_data_wrapper(SEXP data);
 
+SEXP r_mpirc_MPI_Allgather(SEXP send_vec);
 SEXP r_mpirc_MPI_Comm_size();
 SEXP r_mpirc_MPI_Comm_rank();
 SEXP r_mpirc_MPI_Init();
@@ -25,4 +26,3 @@ SEXP r_mpirc_MPI_Gather(SEXP send_vec, SEXP root);
 SEXP r_mpirc_MPI_Get_processor_name();
 
 #endif
-
