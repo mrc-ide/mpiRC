@@ -1,4 +1,4 @@
-context("mpi_get_procesor_name")
+context("MPI_Get_procesor_name")
 
 test_that("Processor name is correct", {
   for (procs in 1:2) {

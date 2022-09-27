@@ -1,4 +1,4 @@
-context("mpi_finalize")
+context("MPI_Finalize")
 
 test_that("Multiple Finalize fails", {
   for (procs in 1:2) {
