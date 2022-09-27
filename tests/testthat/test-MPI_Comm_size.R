@@ -1,4 +1,4 @@
-context("mpi_comm_size")
+context("MPI_Comm_size")
 
 test_that("Comm size matches -n arg", {
   for (procs in 1:4) {

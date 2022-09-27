@@ -1,4 +1,4 @@
-context("mpi_all_gather")
+context("MPI_Allgather")
 
 test_that("MPI all gather with integers", {
   script <- c("rank<-mpiRC::mpirc_MPI_Comm_rank()",

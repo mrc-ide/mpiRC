@@ -1,4 +1,4 @@
-context("mpi_comm_rank")
+context("MPI_Comm_rank")
 
 test_that("Comm ranks are correct", {
   for (procs in 1:4) {

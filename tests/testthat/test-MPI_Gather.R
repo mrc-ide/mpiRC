@@ -1,4 +1,4 @@
-context("mpi_gather")
+context("MPI_Gather")
 
 test_that("MPI gather with integers", {
   for (root in 0:1) {

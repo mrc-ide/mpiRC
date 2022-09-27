@@ -9,6 +9,8 @@ NULL
 ##' @return On the root node, a vector of the data from all nodes in order
 ##' is returned; on all other nodes, NULL.
 mpirc_MPI_Gather <- function(send_vec, root)  {
+  check_init()
+  check_non_finalized()
   res <- .Call(c_mpirc_MPI_Gather, send_vec, as.integer(root))
   if (mpirc_MPI_Comm_rank() == root) res else NULL
 }

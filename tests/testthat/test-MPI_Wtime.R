@@ -1,4 +1,4 @@
-context("mpi_wtime")
+context("MPI_Wtime")
 
 test_that("MPI_Wtime seems about right", {
   for (procs in 1:2) {

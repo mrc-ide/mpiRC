@@ -8,5 +8,7 @@ NULL
 ##' @param send_vec A vector of integers or numerics to be sent.
 ##' @return A vector of the data from all nodes in rank order.
 mpirc_MPI_Allgather <- function(send_vec)  {
+  check_init()
+  check_non_finalized()
   .Call(c_mpirc_MPI_Allgather, send_vec)
 }

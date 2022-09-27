@@ -1,4 +1,4 @@
-context("mpi_finalized")
+context("MPI_Finalized")
 
 test_that("MPI is not finalized before it's initialised", {
   for (procs in 1:2) {

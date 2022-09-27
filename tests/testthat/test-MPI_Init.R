@@ -1,4 +1,4 @@
-context("mpi_init")
+context("MPI_Init")
 
 test_that("Multiple INIT fails", {
   for (procs in 1:2) {
