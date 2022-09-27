@@ -7,7 +7,9 @@
 mpirc_MPI_Gather(send_vec, root)
 }
 \arguments{
-\item{send_vec}{A vector of integers or numerics to be sent.}
+\item{send_vec}{A vector of integers or numerics to be sent}
+
+\item{root}{The rank of node that receives the gathered data}
 }
 \value{
 On the root node, a vector of the data from all nodes in order
