@@ -1,10 +1,10 @@
 Package: mpiRC
 Type: Package
-Title: Mpi Tests using R/C-api
-Version: 0.2
+Title: Mpi from R via .Call
+Version: 0.3
 Author: Wes Hinsley
 Maintainer: Wes Hinsley <w.hinsley@imperial.ac.uk>
-Description: Mpi Tests using R/C-api
+Description: Wrappers for common MPI functions, callable from R.
 License: MIT
 Encoding: UTF-8
 RoxygenNote: 7.2.1
