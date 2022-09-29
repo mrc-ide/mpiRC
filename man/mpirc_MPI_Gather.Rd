@@ -4,10 +4,10 @@
 \alias{mpirc_MPI_Gather}
 \title{Wrapper for MPI_Gather()}
 \usage{
-mpirc_MPI_Gather(send_vec, root)
+mpirc_MPI_Gather(data, root)
 }
 \arguments{
-\item{send_vec}{A vector of integers or numerics to be sent}
+\item{data}{A vector of integers or numerics to be sent}
 
 \item{root}{The rank of node that receives the gathered data}
 }

@@ -20,6 +20,9 @@ indication of functionality so far.
 
 - [x] MPI_Allgather
 - [ ] MPI_Allgatherv
+- [ ] MPI_Allreduce
+- [ ] MPI_Alltoall
+- [ ] MPI_Alltoallv
 - [x] MPI_Bcast 
 - [x] MPI_Barrier
 - [x] MPI_Comm_rank
@@ -33,10 +36,11 @@ indication of functionality so far.
 - [x] MPI_Initialized
 - [ ] MPI_Recv
 - [ ] MPI_Reduce
-- [ ] MPI_Reduceall
-- [ ] MPI_Scatter
+- [X] MPI_Scatter
 - [ ] MPI_Scatterv
 - [ ] MPI_Send
+- [ ] MPI_Sendrecv
+- [ ] MPI_Wtick
 - [x] MPI_Wtime
 
 ## Contributions 

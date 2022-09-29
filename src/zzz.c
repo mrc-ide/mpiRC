@@ -15,7 +15,8 @@ static const R_CallMethodDef call_methods[] = {
  {"c_mpirc_MPI_Comm_rank",          (DL_FUNC) &r_mpirc_MPI_Comm_rank,          0},
  {"c_mpirc_MPI_Gather",             (DL_FUNC) &r_mpirc_MPI_Gather,             2},
  {"c_mpirc_MPI_Get_processor_name", (DL_FUNC) &r_mpirc_MPI_Get_processor_name, 0},
- {"c_mpirc_MPI_Wtime",              (DL_FUNC) &r_mpirc_MPI_Wtime,              0}, 
+ {"c_mpirc_MPI_Scatter",            (DL_FUNC) &r_mpirc_MPI_Scatter,            2},
+ {"c_mpirc_MPI_Wtime",              (DL_FUNC) &r_mpirc_MPI_Wtime,              0},
  {NULL,                             NULL,                                      0}
 };
 
