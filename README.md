@@ -15,29 +15,29 @@ at least for now, the focus is on multi-node (not threaded, as there
 are other viable ways of doing that), with all the usual suspects
 that get taught in a foundational MPI course.
 
-Below is the plan of what I'd like to implement, and a roughuaghly how far the
+Below is the plan of what I'd like to implement, and a rough
 indication of functionality so far.
 
 - [x] MPI_Allgather
 - [ ] MPI_Allgatherv
 - [x] MPI_Bcast 
-- [x] MPI_Barrier
-- [x] MPI_Comm_rank
-- [x] MPI_Comm_size
-- [x] MPI_Finalize
-- [x] MPI_Finalized
+- [/] MPI_Barrier
+- [/] MPI_Comm_rank
+- [/] MPI_Comm_size
+- [/] MPI_Finalize
+- [/] MPI_Finalized
 - [x] MPI_Gather (of whole vector)
 - [ ] MPI_Gatherv
 - [x] MPI_Get_processor_name
-- [x] MPI_Init
-- [x] MPI_Initialized
+- [/] MPI_Init
+- [/] MPI_Initialized
 - [ ] MPI_Recv
 - [ ] MPI_Reduce
 - [ ] MPI_Reduceall
 - [ ] MPI_Scatter
 - [ ] MPI_Scatterv
 - [ ] MPI_Send
-- [ ] MPI_Wtime
+- [/] MPI_Wtime
 
 ## Contributions 
 
