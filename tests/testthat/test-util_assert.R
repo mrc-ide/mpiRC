@@ -1,4 +1,4 @@
-context(util_assert)
+context("util_assert")
 
 test_that("assert_scalar", {
   expect_error(assert_scalar(mtcars), "'mtcars' must be a scalar")
