@@ -20,6 +20,9 @@ indication of functionality so far.
 
 - [x] MPI_Allgather
 - [ ] MPI_Allgatherv
+- [ ] MPI_Allreduce
+- [ ] MPI_Alltoall
+- [ ] MPI_Alltoallv
 - [x] MPI_Bcast 
 - [x] MPI_Barrier
 - [x] MPI_Comm_rank
@@ -33,31 +36,30 @@ indication of functionality so far.
 - [x] MPI_Initialized
 - [ ] MPI_Recv
 - [ ] MPI_Reduce
-- [ ] MPI_Reduceall
-- [ ] MPI_Scatter
+- [X] MPI_Scatter
 - [ ] MPI_Scatterv
 - [ ] MPI_Send
+- [ ] MPI_Sendrecv
+- [ ] MPI_Wtick
 - [x] MPI_Wtime
 
 ## Contributions 
 
-To implement a new command, look through the PRs a similar command, or 
-basically follow this sort of path:
+To implement a new command, look through the PRs for a similar command...
+which all basically follow this sort of path:
 
 * Make a github branch with the name of the MPI_Command
 * Write src/MPI_Command.c, using a similar existing command as a guide.
 * Update the top of src/zzz.c
-* Add the new functinon in src/mpiRC.h
+* Add the new function in src/mpiRC.h
 * Write R/MPI_Command.R, again, using a similar existing one as a guide.
-* devtools::document() to create man/mpirc_MPI_command.Rd
+* devtools::document() to create man/mpirc_MPI_command.Rd and update NAMESPACE
 * Write tests/testthat/test-MPI_command.R, using another as a guide.
 * Update DESCRIPTION, NEWS, and this README.
 * Test. You'll need mpiexec on your path.
 * Done. Make the PR
 
-
-
-## Requirements
+## On Windows
 
 The package has been developed in R 4.2, alongside RTools 4.2, which
 helpfully contains support for the Microsoft MPI library. You will need
@@ -83,3 +85,9 @@ job submit /scheduler:HN /jobtemplate:JT /workdir:WD /numnodes:4 mpiexec -n 4 ru
 ```
 
 where run.bat contains whatever you need to do to run your R job.
+
+## On Linux and MacOS
+
+Untested as yet, but it ought to be easy than Windows. It will need the MPI
+libraries for compiling, and the mpiexec binary in the path, but besides that
+everything should work the same. This would be good to test.

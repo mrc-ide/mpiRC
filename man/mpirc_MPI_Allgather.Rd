@@ -4,10 +4,10 @@
 \alias{mpirc_MPI_Allgather}
 \title{Wrapper for MPI_Allgather()}
 \usage{
-mpirc_MPI_Allgather(send_vec)
+mpirc_MPI_Allgather(data)
 }
 \arguments{
-\item{send_vec}{A vector of integers or numerics to be sent.}
+\item{data}{A vector of integers or numerics to be sent.}
 }
 \value{
 A vector of the data from all nodes in rank order.
