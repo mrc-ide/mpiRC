@@ -11,7 +11,6 @@ void mpirc_MPI_Scatter(mpirc_data_wrapper* send_data, mpirc_data_wrapper* recv_d
 
 SEXP r_mpirc_MPI_Scatter(SEXP send_vec, SEXP root) {
   int root_node = asInteger(root);
-  int rank = asInteger(r_mpirc_MPI_Comm_rank());
   int no_nodes = asInteger(r_mpirc_MPI_Comm_size());
 
   mpirc_data_wrapper* send_data = get_data_wrapper(send_vec);

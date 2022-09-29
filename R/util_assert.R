@@ -18,7 +18,7 @@ assert_whole <- function(x, name = deparse(substitute(x))) {
   }
 }
 
-assert_int_between <- function(x, xmin, xmax) {
+assert_int_between <- function(x, xmin, xmax, name = deparse(substitute(x))) {
   if ((x < xmin) || (x > xmax)) {
     stop(sprintf("'%s' out of range (%d not in %d..%d)", name, x, xmin, xmax))
   }
