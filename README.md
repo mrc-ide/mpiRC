@@ -15,7 +15,7 @@ at least for now, the focus is on multi-node (not threaded, as there
 are other viable ways of doing that), with all the usual suspects
 that get taught in a foundational MPI course.
 
-Below is the plan of what I'd like to implement, and a roughuaghly how far the
+Below is the plan of what I'd like to implement, and a rough
 indication of functionality so far.
 
 - [x] MPI_Allgather
@@ -37,7 +37,7 @@ indication of functionality so far.
 - [ ] MPI_Scatter
 - [ ] MPI_Scatterv
 - [ ] MPI_Send
-- [ ] MPI_Wtime
+- [x] MPI_Wtime
 
 ## Contributions 
 
