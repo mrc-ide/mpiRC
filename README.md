@@ -21,23 +21,23 @@ indication of functionality so far.
 - [x] MPI_Allgather
 - [ ] MPI_Allgatherv
 - [x] MPI_Bcast 
-- [/] MPI_Barrier
-- [/] MPI_Comm_rank
-- [/] MPI_Comm_size
-- [/] MPI_Finalize
-- [/] MPI_Finalized
+- [x] MPI_Barrier
+- [x] MPI_Comm_rank
+- [x] MPI_Comm_size
+- [x] MPI_Finalize
+- [x] MPI_Finalized
 - [x] MPI_Gather (of whole vector)
 - [ ] MPI_Gatherv
 - [x] MPI_Get_processor_name
-- [/] MPI_Init
-- [/] MPI_Initialized
+- [x] MPI_Init
+- [x] MPI_Initialized
 - [ ] MPI_Recv
 - [ ] MPI_Reduce
 - [ ] MPI_Reduceall
 - [ ] MPI_Scatter
 - [ ] MPI_Scatterv
 - [ ] MPI_Send
-- [/] MPI_Wtime
+- [x] MPI_Wtime
 
 ## Contributions 
 
