@@ -1,5 +1,6 @@
 # mpiRC development
 
+* 0.6 Added MPI_Scatter, tests on root-node, and some asserts
 * 0.5 Added MPI_Bcast
 * 0.4 Added MPI_Barrier. More checks. Test renames
 * 0.3 Added MPI_Wtime
