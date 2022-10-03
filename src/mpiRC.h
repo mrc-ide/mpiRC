@@ -26,6 +26,7 @@ SEXP r_mpirc_MPI_Finalize();
 SEXP r_mpirc_MPI_Finalized();
 SEXP r_mpirc_MPI_Gather(SEXP data, SEXP root);
 SEXP r_mpirc_MPI_Get_processor_name();
+SEXP r_mpirc_MPI_Reduce(SEXP data, SEXP root, SEXP func);
 SEXP r_mpirc_MPI_Scatter(SEXP data, SEXP root);
 SEXP r_mpirc_MPI_Wtime();
 
