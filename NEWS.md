@@ -1,6 +1,6 @@
 # mpiRC development
 
-* 0.7 Added MPI_Gather with MIN, MAX, SUM, PROD
+* 0.7 Added MPI_Reduce with MIN, MAX, SUM, PROD
 * 0.6 Added MPI_Scatter, tests on root-node, and some asserts
 * 0.5 Added MPI_Bcast
 * 0.4 Added MPI_Barrier. More checks. Test renames
