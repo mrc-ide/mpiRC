@@ -35,7 +35,7 @@ indication of functionality so far.
 - [x] MPI_Init
 - [x] MPI_Initialized
 - [ ] MPI_Recv
-- [ ] MPI_Reduce
+- [X] MPI_Reduce (4 ops so far)
 - [X] MPI_Scatter
 - [ ] MPI_Scatterv
 - [ ] MPI_Send
