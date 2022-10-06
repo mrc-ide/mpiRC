@@ -17,10 +17,6 @@ mpirc_MPI_Reduce <- function(data, root, func)  {
   check_init()
   check_non_finalized()
 
-  func <- toupper(func)
-  stopifnot(func %in% c("MIN", "MAX", "PROD", "SUM"))
-  func <- as.integer(which(func == c("MIN", "MAX", "PROD", "SUM")))
-
-  res <- .Call(c_mpirc_MPI_Reduce, data, as.integer(root), func)
+  res <- .Call(c_mpirc_MPI_Reduce, data, as.integer(root), mpirc_MPI_Op(func))
   if (mpirc_MPI_Comm_rank() == root) res else NULL
 }
