@@ -2,7 +2,10 @@
 
 /* Translate from R int into MPI_Op -
  * convenience because both MPI_Reduce and
- * MPI_Allreduce will need ot
+ * MPI_Allreduce will need it too.
+ *
+ * Ordering must match MPI_Op.R
+ * Null return should never get reached.
 */
 
 MPI_Op mpirc_MPI_Op(int r_mpi_op) {
