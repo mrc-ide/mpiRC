@@ -1,5 +1,9 @@
 mpirc_MPI_Op <- function(func)  {
   func <- toupper(func)
-  stopifnot(func %in% c("MIN", "MAX", "PROD", "SUM"))
-  as.integer(which(func == c("MIN", "MAX", "PROD", "SUM")))
+
+  # Order of Ops (1..) must match numbering in MPI_Op.c
+
+  mpi_op_enum <- c("MIN", "MAX", "PROD", "SUM")
+  stopifnot(func %in% mpi_op_enum)
+  as.integer(which(func == mpi_op_enum))
 }
