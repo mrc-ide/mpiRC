@@ -14,6 +14,7 @@ typedef struct mpirc_data_wrapper {
 } mpirc_data_wrapper;
 
 mpirc_data_wrapper* get_data_wrapper(SEXP data);
+MPI_Op mpirc_MPI_Op(int r_mpi_op);
 
 SEXP r_mpirc_MPI_Allgather(SEXP data);
 SEXP r_mpirc_MPI_Barrier();
