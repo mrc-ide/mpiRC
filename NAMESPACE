@@ -2,6 +2,7 @@
 
 export(mpirc_MPI_Allgather)
 export(mpirc_MPI_Allreduce)
+export(mpirc_MPI_Alltoall)
 export(mpirc_MPI_Barrier)
 export(mpirc_MPI_Bcast)
 export(mpirc_MPI_Comm_rank)

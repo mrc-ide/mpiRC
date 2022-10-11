@@ -18,6 +18,7 @@ MPI_Op mpirc_MPI_Op(int r_mpi_op);
 
 SEXP r_mpirc_MPI_Allgather(SEXP data);
 SEXP r_mpirc_MPI_Allreduce(SEXP data, SEXP func);
+SEXP r_mpirc_MPI_Alltoall(SEXP data);
 SEXP r_mpirc_MPI_Barrier();
 SEXP r_mpirc_MPI_Bcast(SEXP data, SEXP root);
 SEXP r_mpirc_MPI_Comm_size();

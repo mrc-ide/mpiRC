@@ -1,5 +1,6 @@
 # mpiRC development
 
+* 0.9 Added MPI_Alltoall
 * 0.8 Added MPI_Allreduce, similar to MPI_Reduce
 * 0.7 Added MPI_Reduce with MIN, MAX, SUM, PROD
 * 0.6 Added MPI_Scatter, tests on root-node, and some asserts

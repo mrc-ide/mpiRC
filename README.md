@@ -21,7 +21,7 @@ indication of functionality so far.
 - [x] MPI_Allgather
 - [ ] MPI_Allgatherv
 - [x] MPI_Allreduce (4 ops so far)
-- [ ] MPI_Alltoall
+- [x] MPI_Alltoall
 - [ ] MPI_Alltoallv
 - [x] MPI_Bcast 
 - [x] MPI_Barrier

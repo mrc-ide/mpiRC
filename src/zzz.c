@@ -6,6 +6,7 @@
 static const R_CallMethodDef call_methods[] = {
  {"c_mpirc_MPI_Allgather",          (DL_FUNC) &r_mpirc_MPI_Allgather,          1},
  {"c_mpirc_MPI_Allreduce",          (DL_FUNC) &r_mpirc_MPI_Allreduce,          2},
+ {"c_mpirc_MPI_Alltoall",           (DL_FUNC) &r_mpirc_MPI_Alltoall,           1},
  {"c_mpirc_MPI_Barrier",            (DL_FUNC) &r_mpirc_MPI_Barrier,            0},
  {"c_mpirc_MPI_Bcast",              (DL_FUNC) &r_mpirc_MPI_Bcast,              2},
  {"c_mpirc_MPI_Init",               (DL_FUNC) &r_mpirc_MPI_Init,               0},
