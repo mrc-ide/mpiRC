@@ -43,6 +43,12 @@ indication of functionality so far.
 - [ ] MPI_Wtick
 - [x] MPI_Wtime
 
+Additional topics
+
+- [x] MPI_Datatype
+- [x] MPI_Op
+
+
 ## Contributions 
 
 To implement a new command, look through the PRs for a similar command...
