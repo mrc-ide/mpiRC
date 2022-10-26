@@ -30,7 +30,7 @@ indication of functionality so far.
 - [x] MPI_Finalize
 - [x] MPI_Finalized
 - [x] MPI_Gather (of whole vector)
-- [ ] MPI_Gatherv
+- [x] MPI_Gatherv
 - [x] MPI_Get_processor_name
 - [x] MPI_Init
 - [x] MPI_Initialized
