@@ -15,10 +15,10 @@ test_that("Multiple INIT fails", {
 
 test_that("Init and Finalize works", {
   for (procs in 1:2) {
-    res <- test_mpi(c("mpiRC::mpirc_MPI_Init_thread('MPI_THREAD_MULTIPLE')",
+    res <- test_mpi(c("x<-mpiRC::mpirc_MPI_Init_thread('MPI_THREAD_MULTIPLE')",
                       "mpiRC::mpirc_MPI_Finalize()"),
                     procs, auto_IF = FALSE)
-    expect_equal(length(res), 1)
+    expect_equal(length(res), 0)
     res <- test_mpi("", procs, auto_IF = TRUE)
     expect_equal(length(res), 0)
   }

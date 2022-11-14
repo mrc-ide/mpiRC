@@ -15,12 +15,15 @@ NULL
 ##' `MPI_THREAD_MULTIPLE`, where any threads can perform MPI functions at the same
 ##' time. Performance is reported to be worse in this last mode, while algorithms
 ##' using it will be somewhat complicated to synchronise. These four options are
-##' numberd 0, 1, 2 and 3 internally - see return value.
-##' @returns The level that the MPI implementation will provide on this
-##' occasion - you should check that this number is at least the level you request.
+##' numbered 0, 1, 2 and 3 internally - see return value.
+##' @returns The name of the threading level that the MPI implementation will
+##' provide on this occasion - if all is well, this will be equal to the level
+##' you requested.
 mpirc_MPI_Init_thread <- function(level)  {
   check_non_init()
-  .Call(c_mpirc_MPI_Init_thread, mpirc_MPI_thread_level(level))
+  c("MPI_THREAD_SINGLE", "MPI_THREAD_FUNELLED",
+    "MPI_THREAD_SERIALIZED", "MPI_THREAD_MULTIPLE")[
+      .Call(c_mpirc_MPI_Init_thread, mpirc_MPI_thread_level(level))]
 }
 
 mpirc_MPI_thread_level <- function(level)  {
