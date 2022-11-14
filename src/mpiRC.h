@@ -25,6 +25,7 @@ SEXP r_mpirc_MPI_Bcast(SEXP data, SEXP root);
 SEXP r_mpirc_MPI_Comm_size();
 SEXP r_mpirc_MPI_Comm_rank();
 SEXP r_mpirc_MPI_Init();
+SEXP r_mpirc_MPI_Init_thread(SEXP level);
 SEXP r_mpirc_MPI_Initialized();
 SEXP r_mpirc_MPI_Finalize();
 SEXP r_mpirc_MPI_Finalized();

@@ -1,7 +1,7 @@
 Package: mpiRC
 Type: Package
 Title: Mpi from R via .Call
-Version: 0.11
+Version: 0.12
 Author: Wes Hinsley
 Maintainer: Wes Hinsley <w.hinsley@imperial.ac.uk>
 Description: Wrappers for common MPI functions, callable from R.

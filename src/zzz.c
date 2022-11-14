@@ -10,6 +10,7 @@ static const R_CallMethodDef call_methods[] = {
  {"c_mpirc_MPI_Barrier",            (DL_FUNC) &r_mpirc_MPI_Barrier,            0},
  {"c_mpirc_MPI_Bcast",              (DL_FUNC) &r_mpirc_MPI_Bcast,              2},
  {"c_mpirc_MPI_Init",               (DL_FUNC) &r_mpirc_MPI_Init,               0},
+ {"c_mpirc_MPI_Init_thread",        (DL_FUNC) &r_mpirc_MPI_Init_thread,        1},
  {"c_mpirc_MPI_Initialized",        (DL_FUNC) &r_mpirc_MPI_Initialized,        0},
  {"c_mpirc_MPI_Finalize",           (DL_FUNC) &r_mpirc_MPI_Finalize,           0},
  {"c_mpirc_MPI_Finalized",          (DL_FUNC) &r_mpirc_MPI_Finalized,          0},

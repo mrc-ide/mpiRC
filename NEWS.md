@@ -1,5 +1,6 @@
 # mpiRC development
 
+* 0.12 Added MPI_Init_thread
 * 0.11 Added MPI_Gatherv
 * 0.10 Added some explicit support for MPI_Datatype, MPI_INT and MPI_DOUBLE
 * 0.9 Added MPI_Alltoall
